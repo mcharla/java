@@ -25,6 +25,7 @@ public class CategoryController {
 	
 	 @RequestMapping(value = "/category", method = RequestMethod.GET)
 	   public String category(HttpServletRequest request, Model model) {
+	   	 //git commit test
 		 Category category = new Category();
 		 model.addAttribute("category", category);
 		 return "category";
