@@ -1,7 +1,5 @@
 package com.first.springweb.controller;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +22,7 @@ public class CategoryController {
 	WarehouseService wareHouseService;
 	
 	 @RequestMapping(value = "/category", method = RequestMethod.GET)
-	   public String category(HttpServletRequest request, Model model) {
+	   public String category( Model model) {
 	   	 //git commit test
 		 Category category = new Category();
 		 model.addAttribute("category", category);

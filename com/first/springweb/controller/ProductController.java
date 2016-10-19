@@ -2,8 +2,6 @@ package com.first.springweb.controller;
 
 import java.util.List;
 
-import javax.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +22,7 @@ public class ProductController {
 	WarehouseService wareHouseService;
 	
 	 @RequestMapping(value = "/product", method = RequestMethod.GET)
-	   public String product(HttpServletRequest request, Model model) {
+	   public String product( Model model) {
 		 Product product = new Product();
 		 model.addAttribute("product", product);
 		 List<String> categorys = wareHouseService.getCategories();
