@@ -23,13 +23,18 @@ public class ProductValidator implements Validator {
 			arg1.rejectValue("productId", "product.id.required");
 	    } else{
 	    	try{
-	    		Long prodID = new Long(product.getProductId());
+	    		new Long(product.getProductId());
 	    	} catch(Exception e){
 	    		arg1.rejectValue("productId", "product.id.invalid");
 	    	}
 	    }
-		
+		if(StringUtils.isNotBlank((product.getExpiration()))
+				&& !DateUtil.checkIfDateIsValid(product.getExpiration())) {
+			arg1.rejectValue("expiration", "product.expiration.format");
+		}
 	}
+
+
 
 	
 }

@@ -22,7 +22,7 @@ public class CategoryValidator implements Validator {
 			arg1.rejectValue("categoryId", "category.id.required");
 	    } else{
 	    	try{
-	    		Long catID = new Long(category.getCategoryId());
+	    		new Long(category.getCategoryId());
 	    	} catch(Exception e){
 	    		arg1.rejectValue("categoryId", "category.id.invalid");
 	    	}
