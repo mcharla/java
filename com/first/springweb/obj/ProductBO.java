@@ -3,15 +3,15 @@ package com.first.springweb.obj;
 import java.util.Date;
 
 public class ProductBO {
-	private long productId;
+	private Long productId;
 	private String productName;
 	private Double productPrice;
 	private String productLocation;
-	private long productStock;
+	private Long productStock;
 	private CategoryBO category;
 	private Date expiration;
 	
-	public ProductBO(long productId, String productName, Double productPrice, String productLocation, long productStock, Date expiration,
+	public ProductBO(Long productId, String productName, Double productPrice, String productLocation, Long productStock, Date expiration,
 			CategoryBO category) {
 		super();
 		this.productId = productId;
@@ -49,7 +49,7 @@ public class ProductBO {
 	public void setProductPrice(Double productPrice) {
 		this.productPrice = productPrice;
 	}
-	public void setProductId(long productId) {
+	public void setProductId(Long productId) {
 		this.productId = productId;
 	}
 	public void setProductName(String productName) {
@@ -58,7 +58,7 @@ public class ProductBO {
 	public void setProductLocation(String productLocation) {
 		this.productLocation = productLocation;
 	}
-	public void setProductStock(long productStock) {
+	public void setProductStock(Long productStock) {
 		this.productStock = productStock;
 	}
 	public void setCategory(CategoryBO category) {

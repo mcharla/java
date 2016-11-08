@@ -29,4 +29,6 @@ public interface WarehouseService {
 	
 	public boolean categoryExists(Long categoryId);
 
+	public boolean productExists(Long productId);
+
 }

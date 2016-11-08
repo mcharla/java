@@ -29,6 +29,8 @@ public interface WarehouseDAO {
 	public List<String> getAllCategories();
 
 	public boolean checkCategory(Long categoryId);
+
+	public boolean checkProduct(Long productId);
 	
 
 }

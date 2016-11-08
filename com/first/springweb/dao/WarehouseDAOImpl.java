@@ -176,6 +176,17 @@ public class WarehouseDAOImpl implements WarehouseDAO {
 		}
 	}
 
+	public boolean checkProduct(Long productId) {
+		Connection conn = BaseDAO.getConnection();
+		try{
+			Statement stmt = (Statement) conn.createStatement();
+			ResultSet rs = stmt.executeQuery("select product_name from product where product_id = "+productId);
+			return rs.next();
+		} catch(Exception e){	
+			return false;
+		}
+	}
+
 }
 		
 	

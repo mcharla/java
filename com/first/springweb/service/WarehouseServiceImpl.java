@@ -58,5 +58,10 @@ public class WarehouseServiceImpl implements WarehouseService {
 	public boolean categoryExists(Long categoryId) {
 		return wareHouseDAO.checkCategory(categoryId);
 	}
+
+	public boolean productExists(Long productId) {
+		
+		return wareHouseDAO.checkProduct(productId);
+	}
 	
 }
