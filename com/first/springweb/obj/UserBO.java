@@ -3,7 +3,7 @@ package com.first.springweb.obj;
 import java.util.Date;
 import java.util.List;
 
-public class CustomerBO {
+public class UserBO {
 	
 	private Long customerId;
 	private String firstName;

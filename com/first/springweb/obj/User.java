@@ -2,7 +2,7 @@ package com.first.springweb.obj;
 
 import java.util.List;
 
-public class Customer {
+public class User {
 	
 	private String customerId;
 	private String firstName;

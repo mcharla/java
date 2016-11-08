@@ -6,16 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.first.springweb.obj.AddressBO;
-import com.first.springweb.obj.Customer;
-import com.first.springweb.obj.CustomerBO;
+import com.first.springweb.obj.User;
+import com.first.springweb.obj.UserBO;
 import com.first.springweb.obj.Phone;
 import com.first.springweb.obj.PhoneBO;
 
-public class CustomerUtil {
+public class UserUtil {
 
-	public static CustomerBO convertToCustomerBO(Customer customer) {
+	public static UserBO convertToCustomerBO(User customer) {
 
-		CustomerBO bo = new CustomerBO();
+		UserBO bo = new UserBO();
 
 		bo.setEmail(customer.getEmail());
 		bo.setFirstName(customer.getFirstName());
