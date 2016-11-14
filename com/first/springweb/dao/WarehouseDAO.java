@@ -31,6 +31,9 @@ public interface WarehouseDAO {
 	public boolean checkCategory(Long categoryId);
 
 	public boolean checkProduct(Long productId);
+
+	public  boolean stockFormat(Long productStock);
 	
+	public boolean priceFormat(Double productPrice);
 
 }

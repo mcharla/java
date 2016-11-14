@@ -63,5 +63,13 @@ public class WarehouseServiceImpl implements WarehouseService {
 		
 		return wareHouseDAO.checkProduct(productId);
 	}
+
+	public boolean stockFormat(Long productStock) {
+		return wareHouseDAO.stockFormat(productStock);
+	}
+
+	public boolean priceFormat(Double productPrice) {
+		return wareHouseDAO.priceFormat(productPrice);
+	}
 	
 }

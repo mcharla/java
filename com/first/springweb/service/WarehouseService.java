@@ -20,15 +20,19 @@ public interface WarehouseService {
 	public Map<String, List<ProductBO>> getAllProductsCategoryWise() throws SQLException;
 
 	public int addProduct(ProductBO product) throws Exception;
-	
+
 	public int addCategory(CategoryBO category) throws Exception;
 
 	public int setproductPrice(Long productId, Double productPrice) throws SQLException;
 
 	public List<String> getCategories();
-	
+
 	public boolean categoryExists(Long categoryId);
 
 	public boolean productExists(Long productId);
+
+	public boolean stockFormat(Long productStock);
+
+	public boolean priceFormat(Double productPrice);
 
 }
